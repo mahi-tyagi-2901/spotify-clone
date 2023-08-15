@@ -1,0 +1,296 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.hero {
+    height: 150vh;
+    background-image: url(header-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    padding-top: 15px;
+}
+
+.navbar .logo {
+    text-align: center;
+}
+
+.navbar .logo img {
+    width: 160px;
+    height: 45px;
+}
+
+.account {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.account .lang {
+    display: flex;
+    column-gap: 10px;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 7px 10px;
+}
+
+
+.account .lang i,
+p {
+    color: white;
+}
+
+.lang img {
+    width: 7px;
+    height: 5px;
+    align-self: center;
+}
+
+
+.account .button {
+    align-self: center;
+}
+
+
+.button button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+.slider {
+    height: 30%;
+}
+
+.cover-line {
+    text-align: center;
+}
+
+.cover-line .text {
+    color: white;
+}
+
+
+.cover-line .text h1 {
+    font-size: 50px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.cover-line .text h4 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.cover-line .text h5 {
+    font-size: 25px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.cover-line .get-started {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.cover-line .get-started .email-input {}
+
+.cover-line .get-started .btn {}
+
+
+.cover-line .get-started .email-input input {
+    width: 45%;
+    height: 45px;
+    background: transparent;
+}
+
+
+
+.cover-line .get-started .input-det {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-line .get-started .btn button {
+    background-color: #e50914;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 7px;
+}
+
+.break-line {
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+}
+
+
+.features {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    padding: 70px 100px;
+}
+
+
+
+.features .text {
+    align-self: center;
+}
+
+
+.features .text h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.features .text p {
+    font-size: 25px;
+}
+
+
+
+.features .image img {
+    height: 400px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.faq h1 {
+    font-size: 50px;
+    align-self: center;
+}
+
+.faq .qes {
+    display: grid;
+    row-gap: 10px;
+}
+
+.faq .qes p {
+    background-color: rgb(59, 53, 53);
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.faq h5 {
+    font-size: 23px;
+    font-weight: 100;
+    padding-top: 30px;
+}
+
+
+.faq .input-det {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    padding-top: 30px;
+}
+
+
+.faq .input-det .email-input input {
+    background: transparent;
+    height: 40px;
+    padding: 8px;
+}
+
+.faq .input-det button {
+    background: #e50914;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        grid-template-columns: auto auto auto;
+    }
+
+    .account .lang p {
+        display: none;
+    }
+
+    .cover-line .get-started .input-det {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .cover-line .get-started .btn button {
+        font-size: 18px;
+    }
+
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .features .text h1 {
+        font-size: 30px;
+    }
+
+    .features .text p {
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    .features .image img {
+        height: 190px;
+    }
+
+    .features .image {
+        padding-top: 15px;
+    }
+
+    .feat-2 .image, .feat-4 .image {
+        order: 2;
+    }
+
+    .faq .qes {
+        padding-top: 15px;
+    }
+
+    .faq h1 {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+    .faq .input-det {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+}
